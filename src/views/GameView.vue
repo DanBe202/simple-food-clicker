@@ -6,6 +6,8 @@ import { ref } from 'vue';
 import { Item } from '../game/items/item.object.ts';
 import PlayerInventory from '../components/common/PlayerInventory.vue';
 import Clicker from '../components/common/Clicker.vue';
+import { Items } from '../game/items/items.ts';
+import { Player } from '../game/player/player.object.ts';
 
 const game = ref<GameScene>(new GameScene());
 
@@ -34,7 +36,7 @@ setInterval(() => {
 <template>
   <div class="flex flex-row gap-6">
     <ItemsDisplay
-      :items="game.player.items"
+      :items="game.player.items as Items"
       @buy="buyItem">
     </ItemsDisplay>
     <Clicker
@@ -42,7 +44,7 @@ setInterval(() => {
     </Clicker>
     <div>
       <PlayerInventory
-        :player="game.player"
+        :player="game.player as Player"
         @click="upgradeClick">
       </PlayerInventory>
     </div>

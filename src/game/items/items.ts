@@ -3,7 +3,7 @@ import itemsObj from './items.json';
 import { Big } from 'big.js';
 
 export class Items {
-  private _items: Item[] = [];
+  private readonly _items: Item[] = [];
 
   constructor(items?: {id: number, name: string, description: string, value: string, income: string, quantity: number}[]) {
     if (items) {

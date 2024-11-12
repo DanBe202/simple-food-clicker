@@ -4,7 +4,7 @@ import { Big } from 'big.js';
 
 export class Player {
 
-  private readonly _items: Items = new Items();
+  private readonly _items: Items;
   private _balance: Big = new Big(0);
   private _income: Big = new Big(0);
   private _clickValue: Big = new Big(1);
@@ -26,8 +26,9 @@ export class Player {
       this._balance = new Big(objPlayer.balance)
       this._clickValue = new Big(objPlayer.clickValue)
       this._clickCost = new Big(objPlayer.clickCost)
+      return;
     }
-
+    this._items = new Items();
   }
 
   get items(): Items {
