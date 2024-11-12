@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Cookie",
+    "description": "Random cookie you found in the shelf.",
+    "value": 15,
+    "income": 1
+  },
+  {
+    "id": 2,
+    "name": "Chocolate",
+    "description": "A chocolate bar from the store.",
+    "value": 60,
+    "income": 3
+  },
+  {
+    "id": 3,
+    "name": "Cereals",
+    "description": "Some expensive cereals.",
+    "value": 120,
+    "income": 6
+  },
+  {
+    "id": 4,
+    "name": "Burger",
+    "description": "The tastiest burger you ever eaten.",
+    "value": 350,
+    "income": 15
+  },
+  {
+    "id": 5,
+    "name": "Pie",
+    "description": "Moms pie, perfect as it is.",
+    "value": 700,
+    "income": 30
+  },
+  {
+    "id": 6,
+    "name": "Steak",
+    "description": "Premium pork steak.",
+    "value": 2200,
+    "income": 90
+  },
+  {
+    "id": 7,
+    "name": "Golden Apple",
+    "description": "A apple covered in gold, legends say it gives superpowers.",
+    "value": 5600,
+    "income": 120
+  },
+  {
+    "id": 8,
+    "name": "Diamond shawarma",
+    "description": "THE LEGENDARY SHAWARMA FROM Amir.",
+    "value": 10000000,
+    "income": 1000000
+  }
+]
