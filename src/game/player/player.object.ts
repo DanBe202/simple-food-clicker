@@ -14,7 +14,15 @@ export class Player {
     const stringPlayer = localStorage.getItem('player');
     if (stringPlayer && stringPlayer[0] == '{') {
       const objPlayer = JSON.parse(stringPlayer);
-      this._items = new Items(objPlayer.items);
+      const itemData = objPlayer.items?.map((item: any) => ({
+        id: item._id,
+        name: item._name,
+        description: item._description,
+        value: item._value,
+        income: item._income,
+        quantity: item._quantity,
+      }));
+      this._items = new Items(itemData);
       this._balance = new Big(objPlayer.balance)
       this._clickValue = new Big(objPlayer.clickValue)
       this._clickCost = new Big(objPlayer.clickCost)

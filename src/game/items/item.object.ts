@@ -1,5 +1,4 @@
 import { Big } from 'big.js';
-import { Items } from './items.ts';
 
 export class Item {
   private readonly _id: number;
@@ -10,7 +9,7 @@ export class Item {
   private _income: Big;
   private _quantity: number;
 
-  public constructor(id: number, name: string, description: string, value: Big | number, income: Big | number, quantity: number = 0) {
+  public constructor(id: number, name: string, description: string, value: Big | number | string, income: Big | number | string, quantity: number = 0) {
     this._id = id;
     this._name = name;
     this._description = description;

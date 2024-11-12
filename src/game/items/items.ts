@@ -5,9 +5,9 @@ import { Big } from 'big.js';
 export class Items {
   private _items: Item[] = [];
 
-  constructor(items?: Item[]) {
+  constructor(items?: {id: number, name: string, description: string, value: string, income: string, quantity: number}[]) {
     if (items) {
-      this._items = items.map((item) => new Item(item._id, item._name, item._description, item._value, item._income, item._quantity));
+      this._items = items.map((item) => new Item(item.id, item.name, item.description, item.value, item.income, item.quantity));
       return;
     }
     itemsObj.forEach(
